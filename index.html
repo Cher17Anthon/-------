@@ -6,15 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.main.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.main.css">
+    <link rel="stylesheet" href="css/hero.main.css">
     <style>
-        * {
-            font-family: "Montserrat";
-            font-weight: 600;
-        }
     </style>
 </head>
 <body>
-    <a href="location.html">Расположение</a>
-    <a href="plans.html">Планировки</a>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="header__logo">БК “Ясенево”</div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav__item"><a href="/">Главная</a></li>
+                            <li class="nav__item"><a href="location.html">Расположение</a></li>
+                            <li class="nav__item"><a href="plans.html">Планировки</a></li>
+                            <li class="nav__item nav__item_button"><a href="tel:+74952214022">+7 (495) 221-40-22</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section class="hero">
+                    <h1 class="hero__title">Офисы класса “А” в бизнес-квартале “Ясенево”</h1>
+                    <div class="hero__parametrs">
+                        <div class="hero__parametrs__item">
+                            <span><strong>1 мин</strong></span>
+                            <span>пешком от метро</span>
+                        </div>
+                        <div class="hero__parametrs__item">
+                            <span><strong>от 60 м²</strong></span>
+                            <span>помещения под офисы</span>
+                        </div>
+                        <div class="hero__parametrs__item">
+                            <span><strong>2024 г.</strong></span>
+                            <span>первая очередь</span>
+                        </div>
+                    </div>
+                    <img class="hero__image" src="assets/images/town.png" alt="Бизнес квартал">
+                </section>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
