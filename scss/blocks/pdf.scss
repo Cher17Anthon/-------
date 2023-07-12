@@ -1,0 +1,147 @@
+.pdf {
+    padding-bottom: 136px;
+    position: relative;
+}
+
+.pdf__text {
+    color: $GrayscaleBlack;
+    font-family: Montserrat;
+    font-size: 16px;
+    width: 700px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.pdf__text::after {
+    position: absolute;
+    content:'';
+    top: 10px;
+    left: 10%;
+    width: 530px;
+    height: 2px;
+    background: #000;
+}
+
+.pdf__title {
+    color: $Grayscale50;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    width: 620px;
+    padding-bottom: 20px;
+}
+
+.pdf_link_block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.pdf_link_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 16px;
+    width: 634px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    color: var(--grayscale-10, #9C9C9C);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.pdf__link {
+    color: var(--grayscale-white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+    padding: 14px 34px;
+    background: $PrimaryBlue100;
+    margin-top: 46px;
+}
+
+.pdf__image__mobile {
+    display: none;
+} 
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .pdf__text::after {
+        left: 15%;
+    }
+
+    .pdf__title {
+        width: 568px;
+    }
+
+    .pdf__image__mobile {
+        display: none;
+    }
+
+    .pdf {
+        padding-bottom: 266px;
+    }
+
+    .pdf_link_left {
+        width: 540px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pdf__text {
+        font-size: 12px;
+        max-width: 350px;
+    }
+    
+    .pdf__text::after {
+        width: 265px;
+        top: 8px;
+        left: 25%;
+    }
+
+    .pdf__title {
+        width: 312px;
+        font-size: 20px;
+    }
+
+    .pdf_link_block {
+        flex-direction: column;
+    } 
+
+    .pdf__image__mobile {
+        width: 113px;
+        display: block;
+        margin-top: 26px;
+    }
+
+    .pdf__image {
+        display: none;
+    }
+
+    .pdf {
+        padding-bottom: 115px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+    
+    .pdf_link_left {
+        width: 350px;
+    }
+}

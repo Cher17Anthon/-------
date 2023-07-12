@@ -1,0 +1,229 @@
+.inf {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.inf__text {
+    color: $GrayscaleBlack;
+    font-family: Montserrat;
+    font-size: 16px;
+    width: 670px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.inf__text::after {
+    position: absolute;
+    content:'';
+    top:10px;
+    left: 15%;
+    width: 470px;
+    height: 2px;
+    background: #000;
+}
+
+.inf__title {
+    color: $Grayscale50;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    width: 670px;
+    padding-bottom: 46px;
+}
+
+.inf__blocks {
+    display: grid;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px
+}
+
+.inf__block_text { 
+    color: var(--grayscale-white, #FFF);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.first_inf__block_text {
+    width: 390px;
+    padding-top: 226px;
+}
+
+.one_inf__block:first-child {
+    background: url(../assets/images/inf1.png);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.one_inf__block:nth-child(2) {
+    background: url(../assets/images/inf2.png);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.inf__blocks_text_style {
+    padding-right: 37px;
+    padding-top: 204px;
+}
+
+.one_inf__block:nth-child(3) {
+    background: url(../assets/images/inf3.png);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.one_inf__block:nth-child(4) {
+    background: url(../assets/images/inf4.png);
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.unical_style_inf__blocks_text {
+    padding-bottom: 32px;
+    padding-top: 500px;
+}
+
+.top_style_inf__blocks_text {
+    padding-top: 226px;
+}
+
+.one_inf__block:nth-child(5) {
+    background: url(../assets/images/inf5.png);
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.one_inf__block:nth-child(6) {
+    background: url(../assets/images/inf6.png);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .inf__blocks {
+        grid-template-columns: 354px 364px;
+    }
+
+    .one_inf__block:first-child {
+        background: url(../assets/images/infmob2.png);
+    }
+
+    .one_inf__block:nth-child(2) {
+        background: url(../assets/images/infmob1.png);
+    }
+
+    .one_inf__block:nth-child(3) {
+        background: url(../assets/images/infmob3.png);
+    }
+
+    .unical_style_inf__blocks_text {
+        padding-bottom: 22px;
+    }
+
+    .one_inf__block:nth-child(4) {
+        background: url(../assets/images/infmob4.png);
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+    .one_inf__block:nth-child(5) {
+        background: url(../assets/images/infmob5.png);
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .one_inf__block:nth-child(6) {
+        background: url(../assets/images/infmob6.png);
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .inf__text::after {
+        left: 25%;
+    }
+
+    .inf {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .inf__text {
+        font-size: 12px;
+        width: 346px;
+    }
+
+    .inf__text::after {
+        width: 222px;
+        top: 6px;
+        left: 32%;
+    }
+
+    .inf__title {
+        width: 346px;
+        font-size: 20px;
+    }
+
+    .inf__block_text {
+        width: 254px;
+    }
+
+    .first_inf__block_text {
+        padding-top: 213px;
+        padding-bottom: 8px;
+    }
+
+    .inf__blocks {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .unical_style_inf__blocks_text {
+        padding-bottom: 22px;
+    }
+
+    .one_inf__block:first-child {
+        background: url(../assets/images/infphon.png);
+        height: 300px;
+    }
+
+    .one_inf__block:nth-child(2) {
+        background: url(../assets/images/infphon1.png);
+        height: 300px;
+    }
+
+    .one_inf__block:nth-child(3) {
+        background: url(../assets/images/infphon2.png);
+        height: 300px;
+    }
+
+    .one_inf__block:nth-child(4) {
+        background: url(../assets/images/infphon3.png);
+    }
+
+    .unical_style_inf__blocks_text {
+        padding-bottom: 22px;
+        padding-top: 500px;
+    }
+
+    .one_inf__block:nth-child(5) {
+        background: url(../assets/images/infphon4.png);
+        height: 300px;
+    }
+
+    .one_inf__block:nth-child(6) {
+        background: url(../assets/images/infphon5.png);
+        height: 300px;
+    }
+}

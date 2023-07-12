@@ -1,0 +1,65 @@
+.map {
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.map__text {
+    color: $GrayscaleBlack;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.map__text::after {
+    position: absolute;
+    content:'';
+    top: 10px;
+    left: 15%;
+    width: 568px;
+    height: 2px;
+    background: #000;
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .map__text::after {
+        width: 470px;
+        left: 23%;
+    }
+
+    iframe {
+        height: 534px;
+    }
+
+    .map {
+        padding-bottom: 119px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .map__text {
+        font-size: 12px;
+    }
+
+    .map__text::after {
+        width: 222px;
+        top: 8px;
+        left: 30%;
+    }
+
+    iframe {
+        height: 500px;
+    }
+
+    .map {
+        padding-bottom: 80px;
+    }
+
+}

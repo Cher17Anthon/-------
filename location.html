@@ -15,17 +15,22 @@
     <div class="wrapper">
         <header>
             <div class="container">
-                <div class="header">
-                    <div class="header__logo">БК “Ясенево”</div>
-                    <nav>
-                        <ul class="nav">
-                            <li class="nav__item"><a href="index.html">Главная</a></li>
-                            <li class="nav__item"><a href="/">Расположение</a></li>
-                            <li class="nav__item"><a href="plans.html">Планировки</a></li>
-                            <li class="nav__item nav__item_button"><a href="tel:+74952214022">+7 (495) 221-40-22</a></li>
-                        </ul>
-                    </nav>
-                </div>
+              <div class="header">
+                <a href="index.html" class="header__logo">БК “Ясенево”</a>
+                <nav>
+                  <ul class="nav">
+                    <li class="nav__item"><a href="index.html">Главная</a></li>
+                    <li class="nav__item"><a href="location.html">Расположение</a></li>
+                    <li class="nav__item"><a href="plans.html">Планировки</a></li>
+                    <li class="nav__item nav__item_button">
+                      <a href="tel:+74952214022">
+                        <span>+7 (495) 221-40-22</span>
+                        <img class="nav__item__image" src="assets/images/phone.svg" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
         </header>
         <main>
@@ -41,7 +46,80 @@
                     <img class="hero__image" src="assets/images/location_hero.png" alt="Бизнес квартал">
                 </section>
             </div>
+            <section class="information">
+                <div class="container">
+                  <p class="information__text_top">Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика.</p>
+                </div>
+            </section>
+            <section class="map">
+              <div class="container">
+                <h2 class="map__text">Расположение</h2>
+              </div>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A96c2bbb5372a762c73e8898a94972e3b7106d1f3f277f6f5180b9030a5332317&amp;source=constructor" width="100%" height="720" frameborder="0"></iframe>
+            </section>
+            <div class="container">
+              <section class="inf">
+                <h2 class="inf__text">Инфраструктура</h2>
+                <h1 class="inf__title">Район с готовой инфраструктурой</h1>
+                <div class="inf__blocks">
+                  <div class="one_inf__block">
+                    <p class="inf__block_text first_inf__block_text">Торгово-офисный центр с крытым переходом из метро</p>
+                  </div>
+                  <div class="one_inf__block">
+                    <p class="inf__block_text inf__blocks_text_style">Подземная и наземная парковка с электро-зарядками</p>
+                  </div>
+                  <div class="one_inf__block">
+                    <p class="inf__block_text inf__blocks_text_style">Благоустройство более 7Га с выходом к набережной</p>
+                  </div>
+                  <div class="one_inf__block">
+                    <p class="inf__block_text inf__blocks_text_style unical_style_inf__blocks_text">Уникальные пространства для резидентов бизнес центра</p>
+                  </div>
+                  <div class="one_inf__block">
+                    <p class="inf__block_text inf__blocks_text_style top_style_inf__blocks_text">«Уличная гостиная» с удобной мебелью</p>
+                  </div>
+                  <div class="one_inf__block">
+                    <p class="inf__block_text inf__blocks_text_style">Магазины, панорамный ресторан, шоу-румы, эвенты</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="container">
+              <section class="pdf">
+                <h2 class="pdf__text">Подробно</h2>
+                <h1 class="pdf__title">Вся информация о проекте — в презентации</h1>
+                <div class="pdf_link_block">
+                  <div class="pdf_link_left">
+                    <ul>
+                      <li>25 слайдов подробной информации</li>
+                      <li>Инфраструктура, благоустройство, расположение</li>
+                      <li>Инжененрия, концепция и тд.</li>
+                    </ul>
+                    <img src="assets/images/pdf.png" alt="" class="pdf__image__mobile">
+                    <a href="assets/Obrazets.pdf" class="pdf__link pdf__link_button">Скачать презентацию</a>
+                  </div>
+                  <img src="assets/images/pdf.png" alt="" class="pdf__image">
+                </div>
+              </section>
+            </div>
         </main>
+        <footer>
+          <div class="container">
+            <div class="footer">
+              <div class="top_footer_blocks">
+                <p class="left__title_top_footer">Подберем лучшее помещение под ваши задачи, основываясь на аналитике бизнес-среды в локации.</p>
+                <div class="form_right_top_footer_block">
+                  <input type="text" class="input_style_footer" placeholder="Имя">
+                  <input type="tel" class="input_style_footer" placeholder="+7 987 654 32 10">
+                  <a href="" class="button_style_footer">Получить консультацию</a>
+                </div>
+              </div>
+              <div class="bottom_footer_blocks">
+                <p class="bottom_title_footer_name">БК “Ясенево”</p>
+                <a href="tel:+7 (495) 221-40-22" class="tel_bottom_title_footer_name">+7 (495) 221-40-22</a>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
 </body>
 </html>
