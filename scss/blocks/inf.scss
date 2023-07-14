@@ -39,8 +39,8 @@
 .inf__blocks {
     display: grid;
     grid-template-columns: 25fr 25fr 25fr 25fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px
+    grid-column-gap: 14px;
+    grid-row-gap: 15px;
 }
 
 .inf__block_text { 
@@ -111,7 +111,9 @@
 
 @media screen and (max-width: 1279px) and (min-width: 768px) {
     .inf__blocks {
-        grid-template-columns: 354px 364px;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 
     .one_inf__block:first-child {
