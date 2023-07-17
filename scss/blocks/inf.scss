@@ -168,7 +168,7 @@
     .inf__text::after {
         width: 222px;
         top: 6px;
-        left: 32%;
+        left: 35%;
     }
 
     .inf__title {
@@ -227,5 +227,9 @@
     .one_inf__block:nth-child(6) {
         background: url(../assets/images/infphon5.png);
         height: 300px;
+    }
+
+    .inf_style_container {
+        margin: 0 auto;
     }
 }
